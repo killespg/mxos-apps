@@ -36,10 +36,20 @@ def nome_do_pacote(cargo: pathlib.Path) -> str:
     return achado.group(1)
 
 
+def sdk_local() -> list[str]:
+    """Com o repositorio do MXOS ao lado (../mxos), usa o SDK de la em vez
+    do GitHub (para testar mudancas no SDK antes de publicar)."""
+    local = RAIZ.parent / "mxos" / "sdk"
+    if not (local / "Cargo.toml").exists():
+        return []
+    caminho = local.as_posix()
+    return ["--config", f'patch."https://github.com/killespg/mxos".mxos-sdk.path="{caminho}"']
+
+
 def compilar(pacote: str) -> dict:
     programas = {}
     for arquitetura, alvo in ALVOS.items():
-        subprocess.run(["cargo", "build", "--release", "-p", pacote, "--target", alvo], cwd=RAIZ, check=True)
+        subprocess.run(["cargo", "build", "--release", *sdk_local(), "-p", pacote, "--target", alvo], cwd=RAIZ, check=True)
         programas[arquitetura] = RAIZ / "target" / alvo / "release" / pacote
     return programas
 

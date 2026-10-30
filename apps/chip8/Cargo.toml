@@ -5,4 +5,4 @@ edition = "2024"
 license = "GPL-3.0-or-later"
 
 [dependencies]
-mxos = { package = "mxos-sdk", path = "../../../mxos/sdk" }
+mxos = { package = "mxos-sdk", git = "https://github.com/killespg/mxos" }
