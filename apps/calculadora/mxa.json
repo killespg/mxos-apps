@@ -1,0 +1,8 @@
+{
+  "id": "calculadora",
+  "nome": "Calculadora",
+  "descricao": "Contas com números inteiros, pelo mouse ou pelo teclado.",
+  "autor": "MXOS",
+  "licenca": "GPL-3.0-or-later",
+  "icone": "Calculadora"
+}

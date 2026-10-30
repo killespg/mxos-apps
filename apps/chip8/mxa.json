@@ -1,0 +1,12 @@
+{
+  "id": "chip8",
+  "nome": "CHIP-8",
+  "descricao": "Emulador da máquina CHIP-8: abre jogos .ch8 e .c8 (com uma demonstração embutida).",
+  "autor": "MXOS",
+  "licenca": "GPL-3.0-or-later",
+  "icone": "Chip",
+  "extensoes": [
+    ".ch8",
+    ".c8"
+  ]
+}

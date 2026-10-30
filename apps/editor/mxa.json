@@ -1,0 +1,26 @@
+{
+  "id": "editor",
+  "nome": "Editor de código",
+  "descricao": "Editor de texto com realce de sintaxe (C, Rust, JS, Python, HTML, CSS, shell) e o Claude para explicar e refatorar.",
+  "autor": "MXOS",
+  "licenca": "GPL-3.0-or-later",
+  "icone": "Texto",
+  "extensoes": [
+    ".txt",
+    ".md",
+    ".rs",
+    ".c",
+    ".h",
+    ".cpp",
+    ".js",
+    ".ts",
+    ".py",
+    ".sh",
+    ".css",
+    ".json",
+    ".toml",
+    ".cfg",
+    ".ini",
+    ".log"
+  ]
+}

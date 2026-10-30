@@ -1,0 +1,9 @@
+[package]
+name = "modelo"
+version = "0.1.0"
+edition = "2024"
+# um app pode ter a licenca que o autor quiser (EXCECAO-APPS.md do MXOS)
+license = "MIT"
+
+[dependencies]
+mxos = { package = "mxos-sdk", path = "../../../mxos/sdk" }

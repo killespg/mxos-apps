@@ -1,0 +1,12 @@
+# Os apps sao executaveis estaticos para o MXOS: ARMv7 (a TV box) por
+# padrao; o AArch64 (QEMU e MXQ) com --target aarch64-unknown-none.
+# app.ld (copia do sdk/app.ld do MXOS) fica na raiz: o cargo roda o
+# ligador daqui.
+[build]
+target = "armv7a-none-eabihf"
+
+[target.armv7a-none-eabihf]
+rustflags = ["-C", "link-arg=-Tapp.ld", "-C", "target-cpu=cortex-a7", "-C", "target-feature=+neon,+vfp4,+d32"]
+
+[target.aarch64-unknown-none]
+rustflags = ["-C", "link-arg=-Tapp.ld"]

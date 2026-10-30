@@ -1,0 +1,65 @@
+{
+  "versao": 1,
+  "apps": [
+    {
+      "id": "calculadora",
+      "nome": "Calculadora",
+      "versao": "1.0.0",
+      "descricao": "Contas com números inteiros, pelo mouse ou pelo teclado.",
+      "autor": "MXOS",
+      "licenca": "GPL-3.0-or-later",
+      "icone": "Calculadora",
+      "tamanho": 131514,
+      "pacote": "pacotes/calculadora.mxa",
+      "arquiteturas": [
+        "aarch64",
+        "armv7"
+      ]
+    },
+    {
+      "id": "chip8",
+      "nome": "CHIP-8",
+      "versao": "1.0.0",
+      "descricao": "Emulador da máquina CHIP-8: abre jogos .ch8 e .c8 (com uma demonstração embutida).",
+      "autor": "MXOS",
+      "licenca": "GPL-3.0-or-later",
+      "icone": "Chip",
+      "tamanho": 62723,
+      "pacote": "pacotes/chip8.mxa",
+      "arquiteturas": [
+        "aarch64",
+        "armv7"
+      ]
+    },
+    {
+      "id": "editor",
+      "nome": "Editor de código",
+      "versao": "1.0.0",
+      "descricao": "Editor de texto com realce de sintaxe (C, Rust, JS, Python, HTML, CSS, shell) e o Claude para explicar e refatorar.",
+      "autor": "MXOS",
+      "licenca": "GPL-3.0-or-later",
+      "icone": "Texto",
+      "tamanho": 139453,
+      "pacote": "pacotes/editor.mxa",
+      "arquiteturas": [
+        "aarch64",
+        "armv7"
+      ]
+    },
+    {
+      "id": "pintura",
+      "nome": "Pintura",
+      "versao": "1.0.0",
+      "descricao": "Desenho livre com pincel, cores e borracha.",
+      "autor": "MXOS",
+      "licenca": "GPL-3.0-or-later",
+      "icone": "Pincel",
+      "tamanho": 44190,
+      "pacote": "pacotes/pintura.mxa",
+      "arquiteturas": [
+        "aarch64",
+        "armv7"
+      ]
+    }
+  ]
+}
